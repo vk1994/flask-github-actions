@@ -22,8 +22,10 @@ jobs:
         with:
           python-version: ${{matrix.python-version}}
       - name: Start docker
-        run: docker-compose up --build
+        run: |
+          docker-compose up --build
+          docker-compose down
       - name: Stop docker
         if: success()
-        run: docker-compose down
+        run: echo "successful!!"
       
