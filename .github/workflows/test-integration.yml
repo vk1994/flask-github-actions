@@ -1,4 +1,4 @@
-name: Flask in Action
+name: Flask-in-Action
 on:
   push:
     branches:
